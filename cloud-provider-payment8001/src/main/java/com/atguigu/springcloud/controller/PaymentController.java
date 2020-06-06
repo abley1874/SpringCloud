@@ -13,7 +13,7 @@ import javax.annotation.Resource;
 public class PaymentController {
 
     @Value("${server.port}")
-    private int serverPort;
+    private String serverPort;
 
     @Resource
     private PaymentService paymentService;
@@ -24,7 +24,7 @@ public class PaymentController {
         int result = paymentService.crate(payment);
 
         if (result > 0) {
-            return new CommonResult(200, "插入数据成功,serverPort:"+serverPort, result);
+            return new CommonResult(200, "插入数据成功,serverPort:" + serverPort, result);
         } else {
             return new CommonResult(444, "插入数据库失败", null);
         }
@@ -36,7 +36,7 @@ public class PaymentController {
         Payment payment = paymentService.getPaymentById(id);
 
         if (payment != null) {
-            return new CommonResult(200, "查询成功,serverPort:"+serverPort, payment);
+            return new CommonResult(200, "查询成功,serverPort:" + serverPort, payment);
         } else {
             return new CommonResult(444, "没有对应数据", null);
         }
