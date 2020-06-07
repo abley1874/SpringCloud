@@ -1,0 +1,8 @@
+/cloud-provider-payment8002/target/classes/com/atguigu/springcloud/controller/PaymentController.class
+/cloud-provider-payment8002/target/classes/com/atguigu/springcloud/dao/PaymentDao.class
+/cloud-provider-payment8002/target/classes/com/atguigu/springcloud/service/impl/PaymentServiceImpl.class
+/cloud-provider-payment8002/target/classes/com/atguigu/springcloud/service/PaymentService.class
+/cloud-provider-payment8002/target/classes/com/atguigu/springcloud/PaymentMain8002.class
+/cloud-provider-payment8002/target/classes/mapper/PaymentMapper.xml
+/cloud-provider-payment8002/target/classes/META-INF/cloud-eureka-payment8002.kotlin_module
+/cloud-provider-payment8002/target/classes/application.yml
