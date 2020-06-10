@@ -42,5 +42,13 @@ public class PaymentController {
         }
     }
 
+    /**
+     * 测试自定义的Ribbon负载均衡的策略
+     */
+    @GetMapping("/payment/lb")
+    public String getPaymentLB() {
+        return serverPort;
+    }
+
 
 }

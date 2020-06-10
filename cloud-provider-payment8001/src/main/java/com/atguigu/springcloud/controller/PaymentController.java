@@ -4,6 +4,7 @@ package com.atguigu.springcloud.controller;
 import com.atguigu.springcloud.entities.CommonResult;
 import com.atguigu.springcloud.entities.Payment;
 import com.atguigu.springcloud.service.PaymentService;
+import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.cloud.client.ServiceInstance;
@@ -16,7 +17,7 @@ import java.util.List;
 @RestController
 public class PaymentController {
 
-    private static final org.slf4j.Logger logger = LoggerFactory.getLogger(PaymentController.class);
+    private final Logger logger = LoggerFactory.getLogger(PaymentController.class);
 
     @Value("${server.port}")
     private String serverPort;
@@ -61,6 +62,14 @@ public class PaymentController {
         }
 
         return this.discoveryClient;
+    }
+
+    /**
+     * 测试自定义的Ribbon负载均衡的策略
+     */
+    @GetMapping("/payment/lb")
+    public String getPaymentLB() {
+        return serverPort;
     }
 
 
