@@ -6,3 +6,4 @@
 /cloud-provider-payment8002/target/classes/mapper/PaymentMapper.xml
 /cloud-provider-payment8002/target/classes/META-INF/cloud-eureka-payment8002.kotlin_module
 /cloud-provider-payment8002/target/classes/application.yml
+/cloud-provider-payment8001/src/test/java/text.java
