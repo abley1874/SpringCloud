@@ -7,3 +7,7 @@
 /cloud-provider-payment8002/target/classes/META-INF/cloud-eureka-payment8002.kotlin_module
 /cloud-provider-payment8002/target/classes/application.yml
 /cloud-provider-payment8001/src/test/java/text.java
+/cloud-consumer-feign-order80/target/classes/com/atguigu/springcloud/controller/OrderFeignController.class
+/cloud-consumer-feign-order80/target/classes/com/atguigu/springcloud/service/PaymentFeignService.class
+/cloud-consumer-feign-order80/target/classes/com/atguigu/springcloud/OrderFeignMain80.class
+/cloud-consumer-feign-order80/target/classes/application.yml
