@@ -13,7 +13,7 @@ import javax.annotation.Resource;
 @RestController
 public class PaymentController {
 
-    Logger log= LoggerFactory.getLogger(PaymentController.class);
+    Logger log = LoggerFactory.getLogger(PaymentController.class);
 
     @Resource
     private PaymentService paymentService;
@@ -24,7 +24,7 @@ public class PaymentController {
     @GetMapping("/payment/hystrix/ok/{id}")
     public String paymentInfo_OK(@PathVariable("id") Integer id) {
         String result = paymentService.paymentInfo_OK(id);
-        log.info("*****result: "+result);
+        log.info("*****result: " + result);
         return result;
     }
 
@@ -32,7 +32,15 @@ public class PaymentController {
     public String paymentInfo_TimeOut(@PathVariable("id") Integer id) {
 
         String result = paymentService.paymentInfo_TimeOut(id);
-        log.info("*****result: "+result);
+        log.info("*****result: " + result);
+        return result;
+    }
+
+    //====服务熔断
+    @GetMapping("/payment/circuit/{id}")
+    public String paymentCircuitBreaker(@PathVariable("id") Integer id) {
+        String result = paymentService.paymentCircuitBreaker(id);
+        log.info("****result: " + result);
         return result;
     }
 }
