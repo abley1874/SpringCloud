@@ -11,3 +11,16 @@
 /cloud-consumer-feign-order80/target/classes/com/atguigu/springcloud/service/PaymentFeignService.class
 /cloud-consumer-feign-order80/target/classes/com/atguigu/springcloud/OrderFeignMain80.class
 /cloud-consumer-feign-order80/target/classes/application.yml
+/cloud-consumer-feign-hystrix-order80/target/classes/com/atguigu/springcloud/controller/OrderHystrixController.class
+/cloud-consumer-feign-hystrix-order80/target/classes/com/atguigu/springcloud/service/PaymentFallbackService.class
+/cloud-consumer-feign-hystrix-order80/target/classes/com/atguigu/springcloud/service/PaymentHystrixService.class
+/cloud-consumer-feign-hystrix-order80/target/classes/com/atguigu/springcloud/OrderHystrixMain80.class
+/cloud-consumer-feign-hystrix-order80/target/classes/application.yml
+/cloud-provider-hystrix-payment8001/target/classes/com/atguigu/springcloud/controller/PaymentController.class
+/cloud-provider-hystrix-payment8001/target/classes/com/atguigu/springcloud/service/PaymentService.class
+/cloud-provider-hystrix-payment8001/target/classes/com/atguigu/springcloud/PaymentHystrixMain8001.class
+/cloud-provider-hystrix-payment8001/target/classes/application.yml
+/cloud-gateway-gateway9527/target/classes/com/atguigu/springcloud/config/GateWayConfig.class
+/cloud-gateway-gateway9527/target/classes/com/atguigu/springcloud/filter/MyLogGateWayFilter.class
+/cloud-gateway-gateway9527/target/classes/com/atguigu/springcloud/GateWayMain9527.class
+/cloud-gateway-gateway9527/target/classes/application.yml
