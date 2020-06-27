@@ -40,14 +40,14 @@
         </dependency>
         <dependency>
             <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-test</artifactId>
-            <scope>test</scope>
+            <artifactId>spring-boot-starter-Test</artifactId>
+            <scope>Test</scope>
         </dependency>
         <dependency>
             <groupId>cn.hutool</groupId>
             <artifactId>hutool-all</artifactId>
             <version>RELEASE</version>
-            <scope>test</scope>
+            <scope>Test</scope>
         </dependency>
     </dependencies>
 
